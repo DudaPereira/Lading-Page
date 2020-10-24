@@ -51,10 +51,10 @@
             }
             .content{
                 width: 95%;
-                height: 740px;
-                background-image: url("../img/imagem-fundo-banner.jpg");
-                background-size: cover;
-                background-position: bottom;
+                max-width: 1200px;
+                height: 100%;
+                /* background-color: rgba(255, 255, 255, 0.5); */
+                margin:auto;
             }
             .alinhando-abaixo{
                 display: flex;
@@ -132,26 +132,26 @@
                 height: 200px;
                 background-image: url("../img/imagem-fundo-info.jpg");
                 background-size: cover;
-                font-family: "Courier Prime", monospace;
+                font-family: 'Courier Prime', monospace;
                 text-transform: uppercase;
             }
             .info h4{
-                color: white;
+                color:#fff;
                 font-size: 24px;
             }
             .info p{
                 width: 250px;
-                color: #a259f7;
+                color:#A259F7;
                 font-size: 28px;
-                border: solid 1px #a259f7;
+                border:solid 1px #A259F7;
                 text-align: center;
-                padding: 1em 0;
+                padding:1em 0;
             }
             .info-flex{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-            }      
+            }
             /* Endereço */
             .Endereço{
                 width: 100%;
@@ -224,7 +224,7 @@
 
             @media screen and (max-width: 991px){
                 .Artigo-sobre img{
-                    max-width: 700px;
+                    max-width: px;
                 }
                 .Artigo-text-sobre{
                     width: 90%;
