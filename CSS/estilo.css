@@ -11,6 +11,9 @@
                 background-color: #f9003d;
                 height: 60px;
             }
+            .btnMenu{
+                display: none;
+            }
             .menu{
                 width: 95%;
                 max-width: 1200px;
@@ -137,12 +140,12 @@
             }
             .info h4{
                 color:#fff;
-                font-size: 24px;
+                font-size: 22px;
             }
             .info p{
                 width: 250px;
                 color:#A259F7;
-                font-size: 28px;
+                font-size: 25px;
                 border:solid 1px #A259F7;
                 text-align: center;
                 padding:1em 0;
@@ -153,23 +156,23 @@
                 align-items: center;
             }
             /* Endereço */
-            .Endereço{
+            .endereco{
                 width: 100%;
                 height: 500px;
                 background-image: url("../img/imagem-fundo-ranking.jpg");
                 background-size: cover;
                 background-position: center;
             }
-            .Endereço h2{
+            .endereco h2{
                 font-size: 64px;
-                font-family: 'Bebas Neue', cursive;
-                color: #ffaf00;
+                font-family:'Bebas Neue', cursive;
+                color:#FFAF00;
             }
             .end-text{
                 width: 800px;
                 height: 210px;
                 background-color: #010010;
-                border: solid 2px #340b65;
+                border:solid 2px #340B65;
                 position: relative;
                 display: flex;
                 align-items: center;
@@ -177,18 +180,18 @@
             .end-text p{
                 font-family: 'Courier Prime', monospace;
                 font-size: 24px;
-                color: #a259f7;
+                color:#A259F7;
                 margin-left: 20px;
             }
-            .alinhamento-center{
+            .alinhamento-centro{
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
             .end-text img{
                 position: absolute;
-                right: 10;
-                top: -80;
+                right: 20px;
+                top:-80px;
             }
             .rodape{
                 width: 100%;
@@ -198,33 +201,33 @@
                 font-family: 'Open Sans', sans-serif;
                 font-size: 18px;
             }
-
+/* Responsivo 992 até 1199 */
             @media screen and (max-width: 1199px){
-                .sobre{
+                .Sobre{
                     height: auto;
                     padding-bottom: 4em;
                 }
-                .sobre .content{
+                .Sobre .content{
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                 }
-                .artigo-sobre{
+                .Artigo-sobre{
                     justify-content: center;
                 }
-                .artigo-sobre img{
+                .Artigo-sobre img{
                     width: 100%;
-                    max-width: 850pxs;
+                    max-width: 850px;
                     margin-bottom: 2em;
                 }
                 .Artigo-text-sobre{
                     width: 800px;
                 }
             }
-
+/* Responsivo do 768 até 991 */
             @media screen and (max-width: 991px){
                 .Artigo-sobre img{
-                    max-width: px;
+                    max-width: 700px;
                 }
                 .Artigo-text-sobre{
                     width: 90%;
@@ -233,7 +236,7 @@
                     text-align: center;
                 }
                 .info p{
-                    width: 22opx;
+                    width: 22px;
                 }
                 .end-text{
                     width: 700px;
@@ -241,7 +244,7 @@
                     height: auto;
                     padding: 2em 0;
                 }
-                .Endereço{
+                .endereco{
                     height: auto;
                     padding-bottom: 2em;
                 }
@@ -249,4 +252,90 @@
                     position: unset;
                     margin-top: 2em;
                 }
+            }
+            /* Responsivo do 576 até 767 */
+            @media screen and (max-width: 767px){
+            .menu{
+                width: 100%;
+
+            }
+            .menu ul{
+                width: 100%;
+                height: 350px;
+                background-color: #000;
+                position: absolute;
+                top: 60px;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            .menu ul a:hover{
+                background-color: unset;
+            }
+            .btnMenu{
+                display: block;
+            }
+            .Sobre{
+                height: auto;
+                padding-bottom: 4em; 
+            }
+            .Sobre .content{
+                display: flex;
+                flex-direction: column;
+                align-items: center; 
+            }
+            .Artigo-sobre{
+                justify-content: center;
+                text-transform:uppercase;
+            }
+            .info-card{
+                text-align: center;
+            }
+            .info p {
+                width: 169px;
+            }
+            .end-text{
+                width: 470px
+                }
+            .endereco{
+                    height: auto;
+                    padding-bottom: 2em;
+                }
+            }
+            /* Responsivo do 375 até 576*/
+            @media screen and (max-width:576px){
+                .banner-text h1{
+                    font-size: 30px;
+                }
+                .banner-text p{
+                    font-size: 30px;
+                }
+                .Artigo-sobre{
+                    justify-content: center;
+                    text-transform:uppercase;
+                }
+                .Artigo-sobre img{
+                    position: relative;
+                    right: 85px;
+                }
+                .Artigo-text-sobre h3{
+                    position: relative;
+                    right: 85px;
+                }
+                .Artigo-text-sobre p{
+                    font-size: 15px;
+                }
+                .info-card{
+                    text-align: center;
+                }
+                .info p {
+                    width: 90px;
+                    font-size: 18px;
+                }
+                .end-text{
+                    width: 350px
+                    }
+                .endereco{
+                        height: auto;
+                        padding-bottom: 2em;
+                    }
             }
